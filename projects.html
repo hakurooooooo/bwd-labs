@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBoard — Страница не найдена</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="site-header__logo">
+            <img src="logo.svg" alt="Логотип" class="site-header__logo-img">
+            <span class="site-header__logo-text">TaskBoard</span>
+        </a>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav">
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a href="index.html" class="site-nav__link">Главная</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="projects.html" class="site-nav__link site-nav__link--active" aria-current="page">Проекты</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="tasks.html" class="site-nav__link">Список задач</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="about.html" class="site-nav__link">О приложении</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main">
+        <section class="error-page">
+            <img src="error-404.svg" alt="Ошибка 404 — страница не найдена" class="error-page__image">
+            <h1 class="error-page__title">404 — Страница не найдена</h1>
+            <p class="error-page__text">
+                Запрошенная страница не существует или была перемещена.
+                Проверьте адрес или вернитесь на главную.
+            </p>
+            <a href="index.html" class="btn">Вернуться на главную</a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

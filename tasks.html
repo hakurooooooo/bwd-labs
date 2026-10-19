@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBoard — Список задач</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="site-header__logo">
+            <img src="logo.svg" alt="Логотип" class="site-header__logo-img">
+            <span class="site-header__logo-text">TaskBoard</span>
+        </a>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav">
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a href="index.html" class="site-nav__link">Главная</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="projects.html" class="site-nav__link">Проекты</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="tasks.html" class="site-nav__link site-nav__link--active" aria-current="page">Список задач</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="about.html" class="site-nav__link">О приложении</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main">
+        <h1 class="page-title">Моя доска задач</h1>
+
+        <div class="board-actions">
+            <button type="button" class="btn" id="openDialog">Добавить задачу</button>
+        </div>
+
+        <div class="board">
+            <div class="column column--todo">
+                <h2 class="column__title">Задачи</h2>
+                <div class="card">
+                    <h3 class="card__title">Задача 1</h3>
+                    <p class="card__text">Изучить основы HTML</p>
+                    <input type="checkbox" id="task1" class="card__checkbox">
+                    <label for="task1" class="card__label">Выполнено</label>
+                    <button type="button" class="delete-btn">Удалить</button>
+                </div>
+            </div>
+
+            <div class="column column--progress">
+                <h2 class="column__title">В работе</h2>
+                <div class="card">
+                    <h3 class="card__title">Задача 2</h3>
+                    <p class="card__text">Сверстать страницу по макету</p>
+                    <input type="checkbox" id="task2" class="card__checkbox">
+                    <label for="task2" class="card__label">Выполнено</label>
+                    <button type="button" class="delete-btn">Удалить</button>
+                </div>
+            </div>
+
+            <div class="column column--done">
+                <h2 class="column__title">Выполненные</h2>
+                <div class="card">
+                    <h3 class="card__title">Задача 3</h3>
+                    <p class="card__text">Прочитать методичку по JS</p>
+                    <input type="checkbox" id="task3" class="card__checkbox" checked>
+                    <label for="task3" class="card__label">Выполнено</label>
+                    <button type="button" class="delete-btn">Удалить</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="addDialog" class="dialog">
+        <h2 class="dialog__title">Добавить новую задачу</h2>
+        <form method="dialog" class="dialog__form">
+            <input type="text" placeholder="Текст задачи..." class="dialog__input" required>
+            <div class="dialog__actions">
+                <button type="submit" class="btn">Добавить</button>
+                <button type="button" class="btn btn--secondary" id="closeDialog">Отмена</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>

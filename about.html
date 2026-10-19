@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBoard — О приложении</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="site-header__logo">
+            <img src="logo.svg" alt="Логотип" class="site-header__logo-img">
+            <span class="site-header__logo-text">TaskBoard</span>
+        </a>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav">
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a href="index.html" class="site-nav__link">Главная</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="projects.html" class="site-nav__link">Проекты</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="tasks.html" class="site-nav__link">Список задач</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="about.html" class="site-nav__link site-nav__link--active" aria-current="page">О приложении</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main">
+        <h1 class="page-title">О приложении</h1>
+
+        <section class="about">
+            <h2 class="about__title">TaskBoard</h2>
+            <p class="about__text">
+                TaskBoard — учебное веб-приложение для управления задачами.
+                Создано в рамках курса «Основы веб-разработки».
+            </p>
+
+            <h2 class="about__title">Технологии</h2>
+            <ul class="about__list">
+                <li>HTML5 — семантическая разметка</li>
+                <li>CSS3 — Flexbox, медиазапросы, анимации</li>
+                <li>JavaScript — работа с DOM, диалоговые окна</li>
+            </ul>
+
+            <h2 class="about__title">Автор</h2>
+            <p class="about__text">Студент группы ПрИ-42 Петраков Артемий</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

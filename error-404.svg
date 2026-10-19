@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+    <!-- Большая надпись 404 -->
+    <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif"
+          font-size="140" font-weight="bold" fill="#2c3e50">404</text>
+
+    <!-- Восклицательный знак-декор -->
+    <circle cx="90" cy="90" r="20" fill="#e74c3c"/>
+    <text x="90" y="100" text-anchor="middle" font-family="Arial"
+          font-size="28" font-weight="bold" fill="#fff">!</text>
+
+    <!-- Стикеры рядом -->
+    <rect x="300" y="60" width="40" height="40" rx="4" fill="#fff59d" transform="rotate(-8 320 80)"/>
+    <rect x="330" y="130" width="40" height="40" rx="4" fill="#c8e6c9" transform="rotate(6 350 150)"/>
+
+    <!-- Волнистая линия снизу -->
+    <path d="M60 240 Q110 220 160 240 T260 240 T360 240" stroke="#3498db"
+          stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

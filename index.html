@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBoard — Главная</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="site-header__logo">
+            <img src="logo.svg" alt="Логотип" class="site-header__logo-img">
+            <span class="site-header__logo-text">TaskBoard</span>
+        </a>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav">
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a href="index.html" class="site-nav__link site-nav__link--active" aria-current="page">Главная</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="projects.html" class="site-nav__link">Проекты</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="tasks.html" class="site-nav__link">Список задач</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="about.html" class="site-nav__link">О приложении</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">TaskBoard</h1>
+                <p class="hero__subtitle">Простой менеджер задач для личного и командного использования</p>
+                <p class="hero__text">
+                    TaskBoard помогает организовать работу: добавляйте задачи,
+                    распределяйте их по статусам и отмечайте выполненные.
+                    Простой интерфейс и понятная структура — всё, что нужно
+                    для продуктивной работы.
+                </p>
+                <a href="tasks.html" class="btn">Перейти к задачам</a>
+            </div>
+            <div class="hero__image">
+                <img src="hero.svg" alt="Иллюстрация доски задач">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

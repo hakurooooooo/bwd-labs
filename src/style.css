@@ -453,3 +453,20 @@ img { max-width: 100%; display: block; }
     .hero__title { font-size: 2rem; }
     .column { padding: 12px; }
 }
+/* ===== СТИЛЬ ДЛЯ ПОИСКА ===== */
+.search-input {
+    padding: 10px 16px;
+    border: 2px solid #f39c12;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    margin-left: 15px;
+    width: 250px;
+    outline: none;
+    background: #fffde7;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #e67e22;
+}

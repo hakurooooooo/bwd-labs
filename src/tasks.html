@@ -10,7 +10,7 @@
 
     <header class="site-header">
         <a href="index.html" class="site-header__logo">
-            <img src="./logo.svg" alt="Логотип" class="site-header__logo-img">
+            <img src="logo.svg" alt="Логотип" class="site-header__logo-img">
             <span class="site-header__logo-text">TaskBoard</span>
         </a>
 
@@ -43,40 +43,23 @@
 
         <div class="board-actions">
             <button type="button" class="btn" id="openDialog">Добавить задачу</button>
+            
+            <!-- Поиск (Вариант 4) -->
+            <input type="text" id="searchInput" class="search-input" placeholder="Поиск по задачам...">
         </div>
 
+        <!-- Пустые колонки, карточки создаст JS -->
         <div class="board">
             <div class="column column--todo">
                 <h2 class="column__title">Задачи</h2>
-                <div class="card">
-                    <h3 class="card__title">Задача 1</h3>
-                    <p class="card__text">Изучить основы HTML</p>
-                    <input type="checkbox" id="task1" class="card__checkbox">
-                    <label for="task1" class="card__label">Выполнено</label>
-                    <button type="button" class="delete-btn">Удалить</button>
-                </div>
             </div>
 
             <div class="column column--progress">
                 <h2 class="column__title">В работе</h2>
-                <div class="card">
-                    <h3 class="card__title">Задача 2</h3>
-                    <p class="card__text">Сверстать страницу по макету</p>
-                    <input type="checkbox" id="task2" class="card__checkbox">
-                    <label for="task2" class="card__label">Выполнено</label>
-                    <button type="button" class="delete-btn">Удалить</button>
-                </div>
             </div>
 
             <div class="column column--done">
                 <h2 class="column__title">Выполненные</h2>
-                <div class="card">
-                    <h3 class="card__title">Задача 3</h3>
-                    <p class="card__text">Прочитать методичку по JS</p>
-                    <input type="checkbox" id="task3" class="card__checkbox" checked>
-                    <label for="task3" class="card__label">Выполнено</label>
-                    <button type="button" class="delete-btn">Удалить</button>
-                </div>
             </div>
         </div>
     </main>
@@ -92,6 +75,5 @@
         </form>
     </dialog>
 
-    
 </body>
 </html>
